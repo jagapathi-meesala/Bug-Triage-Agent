@@ -1,3 +1,8 @@
+---
+name: bug-triage
+description: Classify software defect reports by severity and priority while preserving the evidence used for each decision.
+---
+
 # Bug Triage Skill
 
 ## Purpose

@@ -1,3 +1,8 @@
+---
+name: issue-normalization
+description: Normalize raw software bug reports into a stable structured representation without changing factual claims.
+---
+
 # Issue Normalization Skill
 
 ## Purpose
