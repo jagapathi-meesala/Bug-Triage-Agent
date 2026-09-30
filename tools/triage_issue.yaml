@@ -1,0 +1,8 @@
+name: triage_issue
+purpose: Classify bug severity and priority using deterministic documented rules.
+input_schema:
+  type: object
+  required: [title, description]
+output_schema:
+  type: object
+  required: [severity, priority, triggered_rules, decision_explanation]

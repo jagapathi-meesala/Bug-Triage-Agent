@@ -1,0 +1,8 @@
+name: normalize_issue
+purpose: Normalize a bug report and identify missing evidence.
+input_schema:
+  type: object
+  required: [title, description]
+output_schema:
+  type: object
+  required: [title, description, missing_information]

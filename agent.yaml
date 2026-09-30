@@ -1,0 +1,10 @@
+spec_version: "0.1.0"
+name: bug-triage-agent
+version: 1.0.0
+description: Deterministic bug triage agent that normalizes issue reports, classifies severity and priority, and produces structured triage decisions.
+skills:
+  - bug-triage
+  - issue-normalization
+tools:
+  - tools/normalize_issue.yaml
+  - tools/triage_issue.yaml
