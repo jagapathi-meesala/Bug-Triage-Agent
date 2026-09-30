@@ -10,7 +10,7 @@ def test_manifest_structure():
     assert data["skills"] == ["bug-triage", "issue-normalization"]
     assert all(isinstance(x, str) for x in data["tools"])
     for tool in data["tools"]:
-        assert (ROOT / tool).exists()
+        assert (ROOT / "tools" / f"{tool}.yaml").exists()
 
 def test_no_speculative_manifest_fields():
     data = yaml.safe_load((ROOT / "agent.yaml").read_text())

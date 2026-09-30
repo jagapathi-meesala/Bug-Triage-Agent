@@ -6,5 +6,5 @@ skills:
   - bug-triage
   - issue-normalization
 tools:
-  - tools/normalize_issue.yaml
-  - tools/triage_issue.yaml
+  - normalize-issue
+  - triage-issue

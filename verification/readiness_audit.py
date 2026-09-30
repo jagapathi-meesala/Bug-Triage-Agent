@@ -7,7 +7,7 @@ REQUIRED = ["agent.yaml", "SOUL.md", "AGENTS.md", "DUTIES.md", "RULES.md", "EXPL
 def main():
     missing = [name for name in REQUIRED if not (ROOT / name).exists()]
     manifest = yaml.safe_load((ROOT / "agent.yaml").read_text())
-    tools_ok = all((ROOT / p).exists() for p in manifest.get("tools", []))
+    tools_ok = all((ROOT / "tools" / f"{p}.yaml").exists() for p in manifest.get("tools", []))
     skills_ok = all((ROOT / "skills" / s / "SKILL.md").exists() for s in manifest.get("skills", []))
     explain = (ROOT / "EXPLAINABILITY.md").read_text()
     headings_ok = all(h in explain for h in ["## Inputs and Data Sources", "## Decision and Reasoning", "## Limits and Constraints"])
